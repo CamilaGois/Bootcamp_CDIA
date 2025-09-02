@@ -1,7 +1,7 @@
  # Projeto Final do Bootcamp CDIA - Sistema Inteligente de Manutenção Preditiva #
 
 ## CONTEXTUALIZAÇÃO ##
-Projeto Final do Bootcamp de Ciências de Dados e Inteligência Artificial. O objetivo é criar um sistema capaz de identifi car as falhas que venham a ocorrer, e se possível, qual foi o tipo da falha. Cada amostra no conjunto de dados é composta por 8 atributos que descrevem o comportamento de desgaste da máquina e do ambiente. Além dessas características, cada amostra é rotulada com uma das 5 possíveis classes de defeitos.
+Projeto Final do Bootcamp de Ciências de Dados e Inteligência Artificial. O objetivo é criar um sistema capaz de identificar as falhas que venham a ocorrer, e se possível, qual foi o tipo da falha. Cada amostra no conjunto de dados é composta por 8 atributos que descrevem o comportamento de desgaste da máquina e do ambiente. Além dessas características, cada amostra é rotulada com uma das 5 possíveis classes de defeitos.
 
 ## Tratamentos Realizados ##
 Limpeza e Conversão de Colunas Binárias: As colunas que representam falhas binárias (como FDF, FDC, FP, FTE, FA e falha_maquina) apresentavam inconsistências. 
