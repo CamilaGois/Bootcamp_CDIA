@@ -1,4 +1,4 @@
-Projeto Final do Bootcamp CDIA - Sistema Inteligente de Manutenção Preditiva
+##### Projeto Final do Bootcamp CDIA - Sistema Inteligente de Manutenção Preditiva ####
 
 ## CONTEXTUALIZAÇÃO ##
 Projeto Final do Bootcamp de Ciências de Dados e Inteligência Artificial. O objetivo é criar um sistema capaz de identifi car as falhas que venham a ocorrer, e se possível, qual foi o tipo da falha. Cada amostra no conjunto de dados é composta por 8 atributos que descrevem o comportamento de desgaste da máquina e do ambiente. Além dessas características, cada amostra é rotulada com uma das 5 possíveis classes de defeitos.
@@ -18,14 +18,14 @@ Transformação para Problema de Classificação Multiclasse: As múltiplas colu
 
 Criação de Novas Features: Foram criadas novas features combinadas, como razões e produtos de variáveis existentes (torque e velocidade_rotacional), para capturar interações entre as variáveis e enriquecer a representatividade dos dados.
 
-##Tipo de Modelagem e Modelo Utilizado##
+## Tipo de Modelagem e Modelo Utilizado ##
 O problema foi abordado como uma tarefa de classificação multiclasse. O modelo escolhido foi o XGBoostClassifier, conhecido por sua alta performance e robustez. O modelo foi integrado em um pipeline completo para automatizar o fluxo de trabalho.
 
 Pipeline de Pré-processamento: Um ColumnTransformer foi utilizado para aplicar transformações específicas a colunas numéricas (por exemplo, padronização) e categóricas (como One-Hot Encoding).
 
 Balanceamento de Classes: Para lidar com o desbalanceamento de classes, a técnica SMOTE (Synthetic Minority Over-sampling Technique) foi aplicada no conjunto de treino. Isso ajudou a criar amostras sintéticas para as classes minoritárias, nivelando a distribuição e melhorando o desempenho do modelo nessas classes.
 
-##Métricas de Avaliação##
+## Métricas de Avaliação ##
 As seguintes métricas foram utilizadas para avaliar o desempenho do modelo:
 
 F1-Score por Classe (Micro Análise): Avalia a precisão e a revocação para cada classe individualmente.
@@ -36,7 +36,7 @@ Matriz de Confusão: Uma visualização que detalha os acertos e erros do modelo
 
 A validação foi realizada usando a validação cruzada (cross-validation) com 5 folds e a métrica f1_macro, garantindo que o desempenho do modelo fosse consistente e não dependesse de uma partição específica dos dados.
 
-#Desbalanceamento de Classes#
+## Desbalanceamento de Classes ##
 O dataset original apresentou um forte desbalanceamento, com algumas classes de falha sendo muito mais raras do que outras.
 Aplicação de SMOTE: O SMOTE foi fundamental para balancear as classes no conjunto de treino, fornecendo ao modelo dados mais representativos das classes minoritárias.
 
